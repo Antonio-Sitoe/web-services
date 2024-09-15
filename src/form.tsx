@@ -19,7 +19,7 @@ function Form() {
       .then((response) => response.json())
       .then((json) => {
         console.log(json)
-        setData(json)
+        setData(json.data)
       })
       .finally(() => {
         setLoad(false)
