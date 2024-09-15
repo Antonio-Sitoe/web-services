@@ -35,6 +35,8 @@
 
 .card {
   padding: 2em;
+  display: grid;
+  gap: 6px;
 }
 
 .read-the-docs {
