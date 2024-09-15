@@ -4,7 +4,11 @@ import './App.css'
 
 function App() {
   function handle(ID: string) {
-    window.location.href = `https://portal-7okv-git-modi-sdk-release-antonio-sitoes-projects.vercel.app/${ID}`
+    window.open(
+      `https://portal-7okv-git-modi-sdk-release-antonio-sitoes-projects.vercel.app/${ID}`, // URL da página de autenticação
+      'authPopup', // Nome da janela (opcional)
+      'width=600,height=600,scrollbars=yes' // Tamanho e opções da janela
+    )
   }
 
   return (
