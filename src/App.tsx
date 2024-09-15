@@ -7,7 +7,7 @@ function App() {
     window.open(
       `https://portal-7okv-git-modi-sdk-release-antonio-sitoes-projects.vercel.app/${ID}`, // URL da página de autenticação
       'authPopup', // Nome da janela (opcional)
-      'width=600,height=600,scrollbars=yes' // Tamanho e opções da janela
+      'width=600,height=900,scrollbars=yes' // Tamanho e opções da janela
     )
   }
 
