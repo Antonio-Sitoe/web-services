@@ -4,11 +4,12 @@ import './App.css'
 
 function App() {
   function handle(ID: string) {
-    window.open(
-      `https://portal-7okv-git-modi-sdk-release-antonio-sitoes-projects.vercel.app/${ID}`, // URL da página de autenticação
-      'authPopup', // Nome da janela (opcional)
-      'width=600,height=900,scrollbars=yes' // Tamanho e opções da janela
-    )
+    // window.open(
+    //   `https://portal-7okv-git-modi-sdk-release-antonio-sitoes-projects.vercel.app/${ID}`, // URL da página de autenticação
+    //   'authPopup', // Nome da janela (opcional)
+    //   'width=600,height=900,scrollbars=yes' // Tamanho e opções da janela
+    // )
+    window.location.href = `https://portal-7okv-git-modi-sdk-release-antonio-sitoes-projects.vercel.app/${ID}`
   }
 
   return (
@@ -32,7 +33,7 @@ function App() {
         <button onClick={() => handle('e15d31f2-7db9-4cbf-9d93-99dd8fa1ff5c')}>
           Fazer registo Empresa C
         </button>
-        <button
+        {/* <button
           onClick={() => {
             window.location.href = `https://portal-7okv-git-modi-sdk-release-antonio-sitoes-projects.vercel.app/b4f730a7-c2a3-49be-8051-8f6d2b15f447`
           }}
@@ -45,7 +46,7 @@ function App() {
           }}
         >
           Fazer registo Empresa E
-        </button>
+        </button> */}
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
