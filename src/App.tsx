@@ -24,29 +24,21 @@ function App() {
       </div>
       <h1>Registo de dados</h1>
       <div className="card">
-        <button onClick={() => handle('c7eb52ea-ba17-4d05-8862-8b951ccc4089')}>
-          Fazer registo Empresa A
-        </button>
-        <button onClick={() => handle('d4228666-36a2-46c3-8469-dbc537960f84')}>
-          Fazer registo Empresa B
-        </button>
-        <button onClick={() => handle('e15d31f2-7db9-4cbf-9d93-99dd8fa1ff5c')}>
-          Fazer registo Empresa C
-        </button>
-        {/* <button
-          onClick={() => {
-            window.location.href = `https://portal-7okv-git-modi-sdk-release-antonio-sitoes-projects.vercel.app/b4f730a7-c2a3-49be-8051-8f6d2b15f447`
-          }}
-        >
-          Fazer registo Empresa D
-        </button>
-        <button
-          onClick={() => {
-            window.location.href = `https://portal-7okv-git-modi-sdk-release-antonio-sitoes-projects.vercel.app/a1c2d123-ef45-4899-a0ab-bf563d5f9c68`
-          }}
-        >
-          Fazer registo Empresa E
-        </button> */}
+        {[
+          'c7eb52ea-ba17-4d05-8862-8b951ccc4089',
+          'd4228666-36a2-46c3-8469-dbc537960f84',
+          'e15d31f2-7db9-4cbf-9d93-99dd8fa1ff5c',
+          'e15d31f2-9876-acvb-123-1efgegfth65g',
+          'c694ac9f-315a-4117-87a2-bf0d38362e68',
+          '4674fa03-b2e7-48da-b27b-cfda7a90191b',
+          '4dc8c3a8-d78f-409b-8a57-3d0531e59574',
+        ].map((item, i) => {
+          return (
+            <button onClick={() => handle(item)}>
+              Fazer registo Empresa {i + 1}
+            </button>
+          )
+        })}
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
