@@ -28,8 +28,12 @@ function App() {
           'c7eb52ea-ba17-4d05-8862-8b951ccc4089',
           'd4228666-36a2-46c3-8469-09823776g3d2r2',
           'd4228666-36a2-46c3-8469-dbc537960f84',
-
           'e15d31f2-7db9-4cbf-9d93-99dd8fa1ff5c',
+          'a3e26844-4210-4e12-880e-c61545579245',
+          '4f8010dd-c639-4056-91ee-9d62d50faca0',
+          'bdc29c2d-3284-4f3e-9aba-92cd1134eafd',
+          '9ab30b19-a3f7-4370-971a-3bb0f1ef052e',
+          '8e93c14d-6fbe-42c9-a176-7cef1b1dab13',
         ].map((item, i) => {
           return (
             <button onClick={() => handle(item)}>
